@@ -2,6 +2,10 @@
     ===========================================
     HiohSec — Stylesheet
     ===========================================
+<<<<<<< HEAD
+=======
+
+>>>>>>> 64a578bb2a1e2498ca23f4315570e82bdda12c5b
     HOW CSS WORKS (quick version):
     - You select HTML elements and apply styles to them.
     - "." means a class (e.g., .navbar styles <nav class="navbar">)
@@ -174,6 +178,10 @@ body {
 .hero {
     padding: 10rem 0 var(--space-xl);  /* Extra top padding to clear fixed nav */
     text-align: center;
+<<<<<<< HEAD
+=======
+}
+>>>>>>> 64a578bb2a1e2498ca23f4315570e82bdda12c5b
 
 .hero h1 {
     font-size: clamp(2rem, 5vw, 3.2rem);  /* Responsive font size: min 2rem, max 3.2rem */
@@ -268,6 +276,7 @@ body {
    ABOUT SECTION
    ========================================= */
 .about-text {
+<<<<<<< HEAD
  max-width: 700px;
     margin: var(--space-md) auto 0;
 }
@@ -312,6 +321,58 @@ body {
 
 
 /* 
+=======
+    @media (max-width: 900px) {
+        .mobile-menu-btn {
+            display: flex;
+        }
+        .nav-links {
+            display: none;
+            position: absolute;
+            top: 70px;
+            left: 0;
+            right: 0;
+            background: var(--color-bg);
+            border-bottom: 1px solid var(--color-border);
+            flex-direction: column;
+            align-items: stretch;
+            padding: var(--space-sm) 0;
+            z-index: 1001;
+        }
+        .nav-links.active {
+            display: flex;
+        }
+        .nav-links li {
+            text-align: center;
+            padding: var(--space-xs) 0;
+            width: 100%;
+        }
+        .nav-links a {
+            display: block;
+            width: 100%;
+            padding: 1rem 0.5rem;
+            font-size: 1.1rem;
+        }
+        .nav-cta {
+            margin: 0.5rem 1.5rem;
+            width: auto;
+            display: block;
+            font-size: 1.1rem;
+            padding: 1rem 0;
+        }
+        .hero {
+            padding: 7rem 0 var(--space-lg);
+        }
+        .section {
+            padding: var(--space-lg) 0;
+        }
+        .services-grid {
+            grid-template-columns: 1fr;  /* Single column on mobile */
+        }
+    }
+
+/*
+>>>>>>> 64a578bb2a1e2498ca23f4315570e82bdda12c5b
     CSS GRID:
     This creates a responsive grid. "repeat(auto-fit, minmax(300px, 1fr))"
     means: make as many columns as fit, each at least 300px wide.
@@ -561,12 +622,21 @@ body {
 }
 
 /* =========================================
+<<<<<<< HEAD
     MOBILE RESPONSIVE
     ========================================= */
 /*
     @media queries let you change styles based on screen size.
     768px is a common breakpoint for tablets.
     Below that = phones.
+=======
+   MOBILE RESPONSIVE
+   ========================================= */
+
+   @media queries let you change styles based on screen size.
+   768px is a common breakpoint for tablets.
+   Below that = phones.
+>>>>>>> 64a578bb2a1e2498ca23f4315570e82bdda12c5b
 */
 @media (max-width: 768px) {
     /* Show the hamburger menu button */
@@ -613,4 +683,7 @@ body {
         grid-template-columns: 1fr;  /* Single column on mobile */
     }
 }
+<<<<<<< HEAD
 }
+=======
+>>>>>>> 64a578bb2a1e2498ca23f4315570e82bdda12c5b
