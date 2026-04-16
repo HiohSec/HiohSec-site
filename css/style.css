@@ -565,52 +565,14 @@ body {
    MOBILE RESPONSIVE
    ========================================= */
 
-   @media queries let you change styles based on screen size.
-   768px is a common breakpoint for tablets.
-   Below that = phones.
+/*
+    @media queries let you change styles based on screen size.
+    768px is a common breakpoint for tablets.
+    Below that = phones.
 */
 @media (max-width: 768px) {
     /* Show the hamburger menu button */
     .mobile-menu-btn {
         display: flex;
-    }
-
-    /* Hide nav links by default on mobile */
-    .nav-links {
-        display: none;
-        position: absolute;
-        top: 70px;
-        left: 0;
-        right: 0;
-        background: var(--color-bg);
-        border-bottom: 1px solid var(--color-border);
-        flex-direction: column;
-        padding: var(--space-sm) 0;
-    }
-
-    /* Show nav links when menu is toggled */
-    .nav-links.active {
-        display: flex;
-    }
-
-    .nav-links li {
-        text-align: center;
-        padding: var(--space-xs) 0;
-    }
-
-    .hero {
-        padding: 7rem 0 var(--space-lg);
-    }
-
-    .page-hero {
-        padding: 6rem 0 var(--space-md);
-    }
-
-    .section {
-        padding: var(--space-lg) 0;
-    }
-
-    .services-grid {
-        grid-template-columns: 1fr;  /* Single column on mobile */
     }
 }
