@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The story behind HiohSec — a cybersecurity company built on immigrant roots, hard work, and a mission to protect Ohio small businesses.">
+    <title>Our Story | HiohSec LLC</title>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:;">
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-content">
+            <a href="index.html" class="nav-logo">
+                <img src="img/logo.png" alt="HiohSec LLC">
+            </a>
+            <ul class="nav-links">
+                <li><a href="about.html" class="active">Our Story</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="index.html#why">Why HiohSec</a></li>
+                <li><a href="index.html#contact" class="nav-cta">Get in Touch</a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page header -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Our Story</h1>
+            <p class="hero-sub">Built on immigrant roots, hands-on work, and a commitment to protecting local businesses.</p>
+        </div>
+    </section>
+
+    <!-- Story content -->
+    <section class="section">
+        <div class="container story-content">
+
+            <div class="story-block">
+                <p>HiohSec started with my family's story. My parents came to Ohio as immigrants and spent decades working in greenhouses and nurseries. They kept operations running through long days, tough seasons, and constant problem-solving. That work ethic shaped how I see responsibility and what it means to support a business.</p>
+                <p>I grew up in that environment as a first-generation American. HiohSec began with the goal of helping the industry that supported my family, but it became clear that many small businesses in Ohio face the same security gaps. Today, the company supports any local business that needs practical, affordable cybersecurity while still honoring the roots that shaped its mission.</p>
+                <p>HiohSec is based in Cleveland and in its first year. The mission is simple: protect small businesses with clear, reliable, hands-on support.</p>
+            </div>
+
+            <hr class="story-divider">
+
+            <!-- Monterrey -->
+            <div class="story-block story-location">
+                <img src="img/monterrey.jpg" alt="Monterrey, Mexico skyline" class="story-image">
+                <div class="story-caption">
+                    <span class="story-pin">&#x1F4CD;</span>
+                    <h3>Monterrey, Mexico</h3>
+                    <p>The city where my mom grew up before migrating to Ohio as a teenager to work in greenhouses. Her journey laid the foundation for HiohSec's mission.</p>
+                </div>
+            </div>
+
+            <hr class="story-divider">
+
+            <!-- Manuel Doblado -->
+            <div class="story-block story-location">
+                <img src="img/manuel-doblado.jpg" alt="Town square in Manuel Doblado, Guanajuato" class="story-image">
+                <div class="story-caption">
+                    <span class="story-pin">&#x1F3E1;</span>
+                    <h3>Manuel Doblado, Guanajuato</h3>
+                    <p>The town square near the ranch where my dad grew up caring for animals and working from a young age. He migrated to Ohio at 13, where he built a life rooted in cultivation. His journey shaped the values that guide HiohSec today.</p>
+                </div>
+            </div>
+
+            <hr class="story-divider">
+
+            <!-- Ohio -->
+            <div class="story-block story-location">
+                <img src="img/juans-logo.avif" alt="Juan's landscaping business in Ohio" class="story-image">
+                <div class="story-caption">
+                    <span class="story-pin">&#x1F9E4;</span>
+                    <h3>Ohio, USA</h3>
+                    <p>Where I learned to lead by doing — training crews, managing jobs, and solving problems under pressure. Working in my dad's landscaping business taught me how to earn trust through consistency and care. That same mindset now drives HiohSec's mission to protect small businesses with the same hands-on discipline my dad expected from his crews.</p>
+                </div>
+            </div>
+
+            <hr class="story-divider">
+
+            <!-- Credentials -->
+            <div class="story-block">
+                <h2>Credentials</h2>
+                <div class="credentials">
+                    <div class="credential">
+                        <span class="credential-label">Certification</span>
+                        <span class="credential-value">PNPT — Practical Network Penetration Tester (TCM Security)</span>
+                    </div>
+                    <div class="credential">
+                        <span class="credential-label">Experience</span>
+                        <span class="credential-value">Secure Ohio — Local Government Security Initiative</span>
+                    </div>
+                    <div class="credential">
+                        <span class="credential-label">Location</span>
+                        <span class="credential-value">Cleveland, Ohio</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section section-alt">
+        <div class="container contact-section">
+            <h2>Ready to work together?</h2>
+            <p class="section-sub">If your business needs practical cybersecurity, reach out.</p>
+            <a href="mailto:alan@hiohsec.com" class="btn btn-primary btn-lg">alan@hiohsec.com</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 HiohSec LLC. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const menuBtn = document.querySelector('.mobile-menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+        menuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            menuBtn.classList.toggle('active');
+        });
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                menuBtn.classList.remove('active');
+            });
+        });
+    </script>
+
+</body>
+</html>
