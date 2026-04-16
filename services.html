@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HiohSec cybersecurity services — security assessments, device hardening, policy creation, and employee training for Ohio small businesses.">
+    <title>Services | HiohSec LLC</title>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:;">
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-content">
+            <a href="index.html" class="nav-logo">
+                <img src="img/logo.png" alt="HiohSec LLC">
+            </a>
+            <ul class="nav-links">
+                <li><a href="about.html">Our Story</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="index.html#why">Why HiohSec</a></li>
+                <li><a href="index.html#contact" class="nav-cta">Get in Touch</a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <section class="page-hero">
+        <div class="container">
+            <h1>Services</h1>
+            <p class="hero-sub">Straightforward security services designed for small teams. No enterprise pricing, no confusing jargon.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="services-grid">
+
+                <div class="service-card">
+                    <div class="service-icon">🔍</div>
+                    <h3>Security Assessment</h3>
+                    <p>A thorough review of your systems, network, and configurations. You get a clear report showing what's at risk and what to fix — written in plain English, not security jargon.</p>
+                    <ul class="service-list">
+                        <li>Vulnerability scanning</li>
+                        <li>Network configuration review</li>
+                        <li>Account and access audit</li>
+                        <li>Written report with action items</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🛡️</div>
+                    <h3>Hardening &amp; Protection</h3>
+                    <p>We configure your devices, accounts, and systems to resist common attacks. This covers the basics that stop the majority of threats small businesses face.</p>
+                    <ul class="service-list">
+                        <li>Device and OS hardening</li>
+                        <li>Email security setup</li>
+                        <li>Multi-factor authentication</li>
+                        <li>Firewall and router configuration</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">📋</div>
+                    <h3>Policy &amp; Training</h3>
+                    <p>Simple, usable security policies your team will actually follow. Plus phishing simulations and awareness training so your staff knows what to watch for.</p>
+                    <ul class="service-list">
+                        <li>Security policy creation</li>
+                        <li>Phishing simulations</li>
+                        <li>Employee awareness training</li>
+                        <li>Incident response planning</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2>How It Works</h2>
+            <p class="section-sub">Simple process, no surprises.</p>
+            <div class="steps-grid">
+                <div class="step">
+                    <span class="step-number">1</span>
+                    <h3>Reach Out</h3>
+                    <p>Send us an email or schedule a call. Tell us about your business and what concerns you.</p>
+                </div>
+                <div class="step">
+                    <span class="step-number">2</span>
+                    <h3>Assessment</h3>
+                    <p>We review your systems, identify risks, and put together a clear report with what we found.</p>
+                </div>
+                <div class="step">
+                    <span class="step-number">3</span>
+                    <h3>Action Plan</h3>
+                    <p>You get a prioritized list of fixes. We can handle them for you or walk you through it.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section">
+        <div class="container contact-section">
+            <h2>Ready to secure your business?</h2>
+            <p class="section-sub">Start with a security checkup. No commitment, no pressure.</p>
+            <a href="mailto:alan@hiohsec.com" class="btn btn-primary btn-lg">alan@hiohsec.com</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 HiohSec LLC. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const menuBtn = document.querySelector('.mobile-menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+        menuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            menuBtn.classList.toggle('active');
+        });
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                menuBtn.classList.remove('active');
+            });
+        });
+    </script>
+
+</body>
+</html>
