@@ -2,7 +2,6 @@
     ===========================================
     HiohSec — Stylesheet
     ===========================================
-/*
     HOW CSS WORKS (quick version):
     - You select HTML elements and apply styles to them.
     - "." means a class (e.g., .navbar styles <nav class="navbar">)
@@ -175,8 +174,6 @@ body {
 .hero {
     padding: 10rem 0 var(--space-xl);  /* Extra top padding to clear fixed nav */
     text-align: center;
-        /* 
-        */
 
 .hero h1 {
     font-size: clamp(2rem, 5vw, 3.2rem);  /* Responsive font size: min 2rem, max 3.2rem */
@@ -313,7 +310,7 @@ body {
    SERVICES GRID
    ========================================= */
 
-x
+
 /* 
     CSS GRID:
     This creates a responsive grid. "repeat(auto-fit, minmax(300px, 1fr))"
@@ -564,12 +561,12 @@ x
 }
 
 /* =========================================
-   MOBILE RESPONSIVE
-   ========================================= */
-
-   @media queries let you change styles based on screen size.
-   768px is a common breakpoint for tablets.
-   Below that = phones.
+    MOBILE RESPONSIVE
+    ========================================= */
+/*
+    @media queries let you change styles based on screen size.
+    768px is a common breakpoint for tablets.
+    Below that = phones.
 */
 @media (max-width: 768px) {
     /* Show the hamburger menu button */
