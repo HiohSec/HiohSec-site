@@ -175,6 +175,7 @@ body {
 .hero {
     padding: 10rem 0 var(--space-xl);  /* Extra top padding to clear fixed nav */
     text-align: center;
+    /*
 }
 
 .hero h1 {
