@@ -577,7 +577,7 @@ body {
     }
 
     .navbar {
-        margin-top: 48px; /* Height of the mobile banner */
+        margin-top: 0;
     }
 
     .container.nav-content {
