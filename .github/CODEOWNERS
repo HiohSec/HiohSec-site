@@ -1,0 +1,6 @@
+# Repository CODEOWNERS
+# Assigns reviewers/owners for changes. Replace with specific teams or usernames as needed.
+# Format: <pattern> <owner1> <owner2>
+# Example:  * @org/team-name
+
+* @HiohSec
