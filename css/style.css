@@ -477,6 +477,7 @@ body {
     font-size: 1.05rem;
     margin-bottom: var(--space-sm);
     line-height: 1.8;
+    text-align: center;
 }
 
 .story-block h2 {
@@ -631,6 +632,10 @@ body {
     .nav-logo img {
         height: 50px;
         margin-bottom: 0.5rem;
+    }
+    /* Center story paragraphs on small screens for consistent layout */
+    .story-block p {
+        text-align: center;
     }
     /* Ensure hamburger sits above dropdown and other content */
     .mobile-menu-btn {
