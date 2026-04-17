@@ -2,6 +2,7 @@
    Moved from inline <script> blocks to satisfy CSP and enable execution.
 */
 (function () {
+    console.log('main.js loaded');
     const menuBtn = document.querySelector('.mobile-menu-btn');
     const navLinks = document.querySelector('.nav-links');
 
