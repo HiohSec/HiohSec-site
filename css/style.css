@@ -468,6 +468,9 @@ body {
 
 .story-block {
     margin-bottom: var(--space-md);
+    max-width: 700px;
+    margin: 0 auto var(--space-md);
+    padding: 0 var(--space-sm);
 }
 
 .story-block p {
