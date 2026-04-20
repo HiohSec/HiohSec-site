@@ -438,6 +438,47 @@ body {
 }
 
 /* =========================================
+   MODAL (Service details)
+   ========================================= */
+.modal-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    align-items: center;
+    justify-content: center;
+    z-index: 1200;
+    padding: var(--space-md);
+}
+.modal-overlay.active { display: flex; }
+.modal {
+    background: var(--color-bg);
+    color: var(--color-text);
+    max-width: 800px;
+    width: 100%;
+    border-radius: 12px;
+    padding: var(--space-md);
+    border: 1px solid var(--color-border);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    position: relative;
+}
+.modal h3 { margin-top: 0; color: var(--color-heading); }
+.modal-close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: none;
+    border: none;
+    color: var(--color-text-muted);
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 6px;
+}
+.modal-close:hover { color: var(--color-heading); }
+.modal-content p, .modal-content li { color: var(--color-text); font-size: 1rem; line-height: 1.6; }
+.modal .service-list { margin-top: var(--space-sm); }
+
+/* =========================================
    PAGE HERO (for sub-pages like About, Services)
    ========================================= */
 .page-hero {
