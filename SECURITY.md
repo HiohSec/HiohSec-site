@@ -1,6 +1,6 @@
 # Security Policy & Reporting
 
-If you discover a security issue in this repository or on https://hiohsec.com, please report it to alan@hiohsec.com with the subject line "Security issue: [short description]". Provide reproduction steps, affected URL or file paths, and any relevant logs or screenshots.
+If you discover a security issue in this repository or on https://hiohsec.com, please report it to hiohsec@protonmail.com with the subject line "Security issue: [short description]". Provide reproduction steps, affected URL or file paths, and any relevant logs or screenshots.
 
 This repository contains the public website source. It does not store Controlled Unclassified Information (CUI). Do not store secrets, credentials, private keys, or sensitive configuration in this repo.
 
@@ -12,7 +12,7 @@ Basic security practices
 - Limit access to deployment and hosting credentials to least-privilege users.
 
 Reporting and response
-- Send reports to: alan@hiohsec.com
+- Send reports to: hiohsec@protonmail.com
 - We aim to acknowledge reports within 48 hours and provide a remediation timeline.
 
 Notes on site behavior
