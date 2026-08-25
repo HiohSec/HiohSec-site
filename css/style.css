@@ -690,6 +690,87 @@ body {
 }
 
 /* =========================================
+   ROADMAP TIMELINE
+   ========================================= */
+
+/*
+    The timeline is a single vertical line with milestones down one side.
+    The line itself is drawn with a ::before pseudo-element on the list,
+    so we don't need an extra empty div just for decoration.
+*/
+.timeline {
+    position: relative;
+    margin: var(--space-lg) auto 0;
+    max-width: 720px;
+    padding-left: var(--space-md);
+    list-style: none;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.6rem;
+    bottom: 0.6rem;
+    width: 2px;
+    background: var(--color-border);
+}
+
+.timeline-item {
+    position: relative;
+    padding-left: var(--space-md);
+    padding-bottom: var(--space-lg);
+    text-align: left;
+}
+
+.timeline-item:last-child {
+    padding-bottom: 0;
+}
+
+/* The dot on the line. Sits half outside the line so it looks centered. */
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: calc(-1 * var(--space-md) - 5px);
+    top: 0.45rem;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--color-bg);
+    border: 2px solid var(--color-border);
+}
+
+/* "current" marks where the company is today — filled in, with a glow. */
+.timeline-item.current::before {
+    background: var(--color-primary);
+    border-color: var(--color-primary);
+    box-shadow: 0 0 12px rgba(57, 255, 20, 0.6);
+}
+
+.timeline-date {
+    display: block;
+    font-size: 0.8rem;
+    color: var(--color-primary);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.35rem;
+}
+
+.timeline-item h3 {
+    color: var(--color-heading);
+    margin-bottom: var(--space-xs);
+    text-align: left;
+}
+
+.timeline-item p {
+    color: var(--color-text);
+    line-height: 1.8;
+    text-align: left;
+    margin: 0;
+}
+
+/* =========================================
    MOBILE RESPONSIVE
    ========================================= */
 
@@ -764,5 +845,16 @@ body {
     /* Ensure hamburger sits above dropdown and other content */
     .mobile-menu-btn {
         z-index: 1100;
+    }
+    /* Tighten the timeline so milestones don't wrap awkwardly on phones */
+    .timeline {
+        padding-left: var(--space-sm);
+    }
+    .timeline-item {
+        padding-left: var(--space-sm);
+        padding-bottom: var(--space-md);
+    }
+    .timeline-item::before {
+        left: calc(-1 * var(--space-sm) - 5px);
     }
 }
